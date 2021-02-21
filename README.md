@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# Login App
+
+Login app to login and register users. Use forgot password link to reset password. Admin access is authenticated using jsonwebtoken. Use below credentials to access admin dashboard.
+
+Email: admin@admin Password: adminadmin
+
+backend repo - https://github.com/Sammy-39/login-register-api   hosted at - https://login-register-app-api.herokuapp.com/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
