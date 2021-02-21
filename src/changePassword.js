@@ -11,7 +11,6 @@ const ChangePassword = () =>{
     const [password,setPassword] = useState("")
     const [errMsg,setErrMsg] = useState("")
 
-    const [showForm,setShowForm] = useState(true)
     const [showSuccessMsg,setShowSuccessMsg] = useState(false)
     const [showErrMsg,setShowErrMsg] = useState(false)
     const [showSpinner,setShowSpinner] = useState(false)
@@ -21,7 +20,7 @@ const ChangePassword = () =>{
             e.preventDefault()
             setShowSpinner(true)
 
-            const res = await fetch("authentication/changePassword",{
+            const res = await fetch("https://login-register-app-api.herokuapp.com/api/changePassword",{
                 method: "PATCH",
                 headers: {"Content-type":"application/json"},
                 body: JSON.stringify({token:params.token,password})
