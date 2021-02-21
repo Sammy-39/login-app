@@ -35,7 +35,7 @@ const ChangePassword = () =>{
                     setPassword("")
                     setShowSuccessMsg(false)
                     history.replace("/")
-                },1200)
+                },2000)
             }
             else{
                 throw new Error(resData.message)
