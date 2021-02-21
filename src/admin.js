@@ -18,6 +18,10 @@ const Admin = () =>{
                 headers: {authorize:localStorage.getItem("token")}
             })
             const resData = await res.json()
+<<<<<<< HEAD
+=======
+          
+>>>>>>> 7c0095602a7175df3b768c9e1074f6b10d67564d
             if(res.status===200){
                 setShowErr(false)
                 setShowSpin(false)
