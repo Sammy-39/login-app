@@ -32,7 +32,7 @@ const Register = ({setShowRegister}) =>{
                 setPassword("")
                 setTimeout(()=>{
                     setShowSuccessMsg(false)
-                },1800)
+                },2000)
             }
             else{
                 setShowSpinner(false)
