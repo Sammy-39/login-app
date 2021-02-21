@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+.app{
+    display: flex;
+    justify-content: center;
+    margin-top: 63px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 5px 5px #777;
+    height: 500px;
+    padding: 40px 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login h4{
+    margin-bottom: 45px;
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-btns{
+    display: flex;
+    justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.small{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row-reverse;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.err-msg{
+    background-color: red;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 4px 7px;
+    color: white;
+    margin-right: 15px;
 }
+
+.success-msg{
+    background-color: green;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 4px 7px;
+    color: white;
+    margin-right: 15px;
+}
+
+.forgot-pass{
+    margin-top: 10px;
+    cursor: pointer;
+    color: red;
+    font-size: 13px;
+}
+
+.register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 5px 5px #777;
+    height: 500px;
+    padding: 40px 60px;
+    position: relative;
+}
+
+.register h4{
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.back{
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.back:hover{
+    font-size: 25px;
+}
+
+.admin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 5px 5px #777;
+    height: auto;
+    padding: 40px 60px;
+    position: relative;
+}
+
+.table{
+    margin-top: 10px;
+}
+
+.logout{
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    cursor: pointer;
+}
+
+.logout i:hover{
+    font-size: 20px;
+}
+
+.forgot-pwd{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 5px 5px #777;
+    height: 400px;
+    width: 400px;
+    padding: 40px 60px;
+    position: relative;
+}
+
+.forgot-pwd h4{
+    margin-bottom: 40px;
+}
+
