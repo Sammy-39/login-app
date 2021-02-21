@@ -31,8 +31,8 @@ const ChangePassword = () =>{
                 setShowSuccessMsg(true)
                 setShowErrMsg(false)
                 setShowSpinner(false)
+                setPassword("")
                 setTimeout(()=>{
-                    setPassword("")
                     setShowSuccessMsg(false)
                     history.replace("/")
                 },2000)
